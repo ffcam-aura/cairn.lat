@@ -60,7 +60,7 @@ export default function Home() {
         <div className="rise d3">
           <EmailCapture
             submitLabel="Être informé du lancement"
-            successMessage="Bien reçu — un email de confirmation vient de vous être envoyé. Pensez à vérifier vos spams."
+            successMessage="Bien reçu — nous vous écrirons au lancement de Cairn. Merci."
           />
         </div>
         <p className="capture-note rise d4">
@@ -296,7 +296,7 @@ export default function Home() {
             </p>
             <EmailCapture
               submitLabel="Me tenir au courant"
-              successMessage="Merci — un email de confirmation vient de vous être envoyé. Pensez à vérifier vos spams."
+              successMessage="Merci — c'est noté. À bientôt."
               placeholder="votre email"
               fullWidth
             />

@@ -101,8 +101,9 @@ export default function PolitiqueConfidentialite() {
         </p>
         <p className="body-text">
           Base légale&nbsp;: votre <strong>consentement explicite</strong>{" "}
-          (art. 6.1.a du RGPD), confirmé par un email de validation que vous
-          recevez après avoir soumis le formulaire (double opt-in).
+          (art. 6.1.a du RGPD), donné en soumettant le formulaire. Vous
+          pouvez vous désinscrire à tout moment depuis le lien présent dans
+          chaque email reçu.
         </p>
       </section>
 
