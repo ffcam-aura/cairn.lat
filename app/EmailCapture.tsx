@@ -1,33 +1,15 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const STORAGE_KEY = "cairn:subscribed";
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-
-function subscribe(cb: () => void) {
-  window.addEventListener("storage", cb);
-  return () => window.removeEventListener("storage", cb);
-}
-
-function getSnapshot() {
-  try {
-    return localStorage.getItem(STORAGE_KEY) !== null;
-  } catch {
-    return false;
-  }
-}
-
-function getServerSnapshot() {
-  return false;
-}
+const AUTO_RESET_MS = 5000;
 
 type Status = "idle" | "pending" | "invalid" | "error";
 
 type Props = {
   submitLabel: string;
   successMessage: string;
-  returningMessage: string;
   placeholder?: string;
   fullWidth?: boolean;
 };
@@ -35,20 +17,29 @@ type Props = {
 export default function EmailCapture({
   submitLabel,
   successMessage,
-  returningMessage,
   placeholder = "prénom@exemple.fr",
   fullWidth = false,
 }: Props) {
-  const storedSubscribed = useSyncExternalStore(
-    subscribe,
-    getSnapshot,
-    getServerSnapshot,
-  );
-  const [justSubmitted, setJustSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
+  const formRef = useRef<HTMLFormElement>(null);
+  const resetTimerRef = useRef<number | null>(null);
 
-  const submitted = storedSubscribed || justSubmitted;
-  const message = justSubmitted ? successMessage : returningMessage;
+  function clearResetTimer() {
+    if (resetTimerRef.current !== null) {
+      window.clearTimeout(resetTimerRef.current);
+      resetTimerRef.current = null;
+    }
+  }
+
+  function reset() {
+    clearResetTimer();
+    setSubmitted(false);
+    setStatus("idle");
+    formRef.current?.reset();
+  }
+
+  useEffect(() => clearResetTimer, []);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -80,13 +71,10 @@ export default function EmailCapture({
         return;
       }
 
-      try {
-        localStorage.setItem(STORAGE_KEY, email);
-      } catch {
-        /* localStorage unavailable */
-      }
       setStatus("idle");
-      setJustSubmitted(true);
+      setSubmitted(true);
+      clearResetTimer();
+      resetTimerRef.current = window.setTimeout(reset, AUTO_RESET_MS);
     } catch {
       setStatus("error");
     }
@@ -97,6 +85,7 @@ export default function EmailCapture({
   return (
     <>
       <form
+        ref={formRef}
         className={`capture${submitted ? " hidden" : ""}${
           status === "invalid" ? " invalid" : ""
         }`}
@@ -138,7 +127,15 @@ export default function EmailCapture({
         aria-live="polite"
         style={fullWidth ? { marginTop: "10px" } : undefined}
       >
-        {message}
+        <span>{successMessage}</span>
+        <button
+          type="button"
+          className="capture-close"
+          aria-label="Fermer"
+          onClick={reset}
+        >
+          ×
+        </button>
       </div>
       {status === "error" && !submitted && (
         <p

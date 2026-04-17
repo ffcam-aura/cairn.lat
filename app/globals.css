@@ -203,9 +203,30 @@ form.capture.invalid {
   border-radius: 2px;
   max-width: 460px;
   display: none;
+  align-items: flex-start;
+  gap: 12px;
 }
 .capture-success.show {
-  display: block;
+  display: flex;
+}
+.capture-success > span {
+  flex: 1;
+}
+.capture-close {
+  border: 0;
+  background: transparent;
+  color: var(--forest);
+  font-size: 20px;
+  line-height: 1;
+  padding: 0 2px;
+  cursor: pointer;
+  font-family: inherit;
+  opacity: 0.55;
+  transition: opacity 0.15s ease;
+}
+.capture-close:hover,
+.capture-close:focus-visible {
+  opacity: 1;
 }
 form.capture.hidden {
   display: none;

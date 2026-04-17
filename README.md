@@ -9,6 +9,8 @@
 
 # Cairn
 
+[![Keyway Secrets](https://www.keyway.sh/badge.svg?repo=ffcam-aura/cairn.lat)](https://www.keyway.sh/vaults/ffcam-aura/cairn.lat)
+
 ### Débriefer nos sorties en montagne, pour progresser ensemble.
 
 **Une application simple, collective et open source, pour capitaliser sur chaque sortie.**

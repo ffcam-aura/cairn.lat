@@ -61,7 +61,6 @@ export default function Home() {
           <EmailCapture
             submitLabel="Être informé du lancement"
             successMessage="Bien reçu — un email de confirmation vient de vous être envoyé. Pensez à vérifier vos spams."
-            returningMessage="Vous êtes inscrit·e. À bientôt pour les nouvelles du lancement."
           />
         </div>
         <p className="capture-note rise d4">
@@ -114,13 +113,13 @@ export default function Home() {
             </g>
 
             <text className="tick" x="20" y="192">
-              1860 m
+              1650 m
             </text>
             <text className="tick" x="302" y="192">
               S O R T I E
             </text>
             <text className="tick" x="560" y="192">
-              2240 m
+              3100 m
             </text>
 
             <g stroke="#2E4A3A" strokeWidth="0.8" opacity="0.6">
@@ -162,7 +161,8 @@ export default function Home() {
             <span className="tenet-body">
               <span className="lead">Un fil conducteur simple</span>
               <span className="sub">
-                pour animer le débrief à 2, 4 ou 8, sans qu&apos;il se délite.
+                pour animer le débrief à 2, 4 ou 8, sans qu&apos;il parte
+                dans tous les sens.
               </span>
             </span>
           </li>
@@ -203,8 +203,9 @@ export default function Home() {
         <p className="body-text">
           Le projet est pensé pour{" "}
           <strong>s&apos;articuler avec les pratiques existantes</strong>, et
-          reste <strong>ouvert aux retours</strong> des encadrant·es FFCAM,
-          FFME, FSGT et des guides ENSA — plutôt que de s&apos;y substituer. Il
+          reste <strong>ouvert aux retours</strong> de celles et ceux qui
+          encadrent en FFCAM, FFME, FSGT, ou côté guides ENSA — plutôt que de
+          s&apos;y substituer. Il
           est délibérément <strong>open source</strong>, pour rester au service
           de la communauté, et non d&apos;un éditeur.
         </p>
@@ -270,8 +271,8 @@ export default function Home() {
         </figure>
 
         <p className="attribution">
-          Initié par Régis, ouvert à toute personne qui pratique ou encadre
-          en montagne.
+          Un projet porté par des bénévoles de la montagne, ouvert à toute
+          personne qui pratique ou encadre.
         </p>
       </section>
 
@@ -288,15 +289,14 @@ export default function Home() {
               <span className="tick" />
               Pour&nbsp;/ 01
             </div>
-            <h3 className="col-title">Encadrant·e ou pratiquant·e</h3>
+            <h3 className="col-title">Vous encadrez ou vous pratiquez</h3>
             <p className="col-desc">
               Vous animez des sorties, ou vous en vivez côté cordée. Nous vous
               préviendrons quand l&apos;outil sera testable.
             </p>
             <EmailCapture
-              submitLabel="Être tenu·e au courant"
+              submitLabel="Me tenir au courant"
               successMessage="Merci — un email de confirmation vient de vous être envoyé. Pensez à vérifier vos spams."
-              returningMessage="Merci, vous êtes inscrit·e. À bientôt."
               placeholder="votre email"
               fullWidth
             />
@@ -306,7 +306,7 @@ export default function Home() {
               <span className="tick" />
               Pour&nbsp;/ 02
             </div>
-            <h3 className="col-title">Développeur·se ou bénévole tech</h3>
+            <h3 className="col-title">Vous développez ou contribuez côté tech</h3>
             <p className="col-desc">
               Le code est ouvert dès le premier jour. Les contributions, issues
               et relectures sont bienvenues.
