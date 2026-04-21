@@ -33,7 +33,7 @@ Cairn est un **outil de poche** pensé pour être sorti au pied de la voie, à l
 |---|----------|-------------|
 | 001 | **Un fil conducteur simple** | Pour animer le débrief à 2, 4 ou 8, sans qu'il se délite. |
 | 002 | **Une trace écrite partageable** | Avec le groupe et les sorties suivantes, relisible six mois plus tard. |
-| 003 | **Un maillon dans la chaîne du RETEX** | En montagne, à terme en lien avec Camptocamp et la base Sérac. |
+| 003 | **Le maillon débriefing de la chaîne ReTex** | Préparation de sortie, débriefing, récit, ReTex — Cairn outille le deuxième. |
 
 ## La démarche
 

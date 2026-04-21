@@ -136,15 +136,16 @@ export default function Home() {
         <p className="eyebrow">§ 01 — Le problème</p>
         <h2 className="section-title">Pourquoi débriefer&nbsp;?</h2>
         <p className="body-text">
-          Après une sortie, les enseignements du terrain se perdent souvent dans
-          le retour à la voiture. Pourtant, c&apos;est le moment où les écarts
-          entre ce qu&apos;on avait prévu et ce qu&apos;on a vécu sont les plus
-          parlants.
+          Un débriefing structuré permet de mettre l&apos;accent sur{" "}
+          <strong>ce qui a bien fonctionné</strong>, et, par la réflexion
+          collective, de trouver des axes d&apos;amélioration. Mais bien
+          souvent, ces échanges se perdent au retour de la sortie.
         </p>
         <p className="body-text">
-          <strong>Un débrief structuré, collectif, change la donne&nbsp;:</strong>{" "}
-          il ancre l&apos;expérience vécue, fait circuler la vigilance, et donne
-          à la sortie suivante de vraies bases pour décider.
+          Cairn aide à <strong>structurer l&apos;exercice</strong>,{" "}
+          <strong>ancrer</strong> ce qui a été dit, <strong>capitaliser</strong>{" "}
+          les enseignements, et <strong>valoriser</strong> les réflexions en
+          les partageant au-delà du groupe.
         </p>
       </section>
 
@@ -152,8 +153,9 @@ export default function Home() {
         <p className="eyebrow">§ 02 — La solution</p>
         <h2 className="section-title">Ce que propose Cairn</h2>
         <p className="body-text">
-          Un outil de poche, pensé pour être sorti au pied de la voie, à la
-          pause de midi, ou au parking avant de rouler.
+          Un outil de poche, toujours avec soi, pensé pour être utilisable au
+          pied de la voie, à la terrasse du café, ou entre les participants
+          avant de rentrer chez soi.
         </p>
         <ul className="tenets">
           <li>
@@ -179,9 +181,10 @@ export default function Home() {
           <li>
             <span className="num">003</span>
             <span className="tenet-body">
-              <span className="lead">Un maillon dans la chaîne du RETEX</span>
+              <span className="lead">Le maillon débriefing de la chaîne ReTex</span>
               <span className="sub">
-                en montagne, à terme en lien avec Camptocamp et la base Sérac.
+                préparation de sortie, débriefing, récit, ReTex —
+                Cairn outille le deuxième.
               </span>
             </span>
           </li>
@@ -195,10 +198,10 @@ export default function Home() {
           Cairn s&apos;inscrit dans la lignée de la{" "}
           <strong>
             CSV — Cartographie Systémique des Vigilances
-          </strong>{" "}
-          proposée par Paulo Grobel. L&apos;outil n&apos;invente pas une méthode
-          concurrente&nbsp;: il cherche à rendre utilisable, sur le terrain, un
-          cadre qui a déjà fait ses preuves en formation.
+          </strong>
+          , vulgarisée par Paulo Grobel. L&apos;outil ne réinvente pas cette
+          méthode&nbsp;: il s&apos;en inspire pour aller au-delà de la
+          préparation de sortie, premier maillon de la chaîne ReTex.
         </p>
         <p className="body-text">
           Le projet est pensé pour{" "}
