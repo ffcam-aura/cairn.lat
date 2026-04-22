@@ -183,8 +183,8 @@ export default function Home() {
             <span className="tenet-body">
               <span className="lead">Le maillon débriefing de la chaîne ReTex</span>
               <span className="sub">
-                préparation de sortie, débriefing, récit, ReTex —
-                Cairn outille le deuxième.
+                Préparation de sortie, débriefing, récit, ReTex —
+                Cairn outille le deuxième, en lien avec Camptocamp.
               </span>
             </span>
           </li>
@@ -207,7 +207,7 @@ export default function Home() {
           Le projet est pensé pour{" "}
           <strong>s&apos;articuler avec les pratiques existantes</strong>, et
           reste <strong>ouvert aux retours</strong> de celles et ceux qui
-          encadrent en FFCAM, FFME, FSGT, ou côté guides ENSA — plutôt que de
+          encadrent à la FFCAM, FFME, FSGT, ou côté guides ENSA — plutôt que de
           s&apos;y substituer. Il
           est délibérément <strong>open source</strong>, pour rester au service
           de la communauté, et non d&apos;un éditeur.
