@@ -206,7 +206,7 @@ export default function Home() {
         <p className="body-text">
           Le projet est pensé pour{" "}
           <strong>s&apos;articuler avec les pratiques existantes</strong>, et
-          reste <strong>ouvert aux retours</strong> de celles et ceux qui
+          reste <strong>ouvert aux retours</strong>{" "}de celles et ceux qui
           encadrent à la FFCAM, FFME, FSGT, ou côté guides ENSA — plutôt que de
           s&apos;y substituer. Il
           est délibérément <strong>open source</strong>, pour rester au service
