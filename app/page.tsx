@@ -67,6 +67,14 @@ export default function Home() {
           Un email, au lancement. Pas de newsletter, pas de revente.
         </p>
 
+        <div className="hero-app-cta rise d4">
+          <span className="hero-app-cta-label">L'application est disponible</span>
+          <Link href="/nouveau" className="btn-ghost">
+            Créer un débrief
+            <span className="arrow" aria-hidden="true">→</span>
+          </Link>
+        </div>
+
         <figure
           className="hero-illus rise d4"
           aria-label="Schéma : courbes de niveau avec cairn au sommet"
